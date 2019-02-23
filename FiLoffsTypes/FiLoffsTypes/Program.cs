@@ -8,9 +8,10 @@ namespace FiLoffsTypes
 {
     class Class1
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            testing tm = new Testing();
+            Testing tm = new Testing();
             Console.WriteLine("Testing.Who Test");
             tm.WhoTest();
             Console.WriteLine("Testing.Back Test");
