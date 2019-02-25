@@ -10,26 +10,32 @@ namespace FiLoffsFormula1
     {
         static void Main(string[] args)
         {
-            Random x = new Random();           
+            
+            
 
             task1();
                                    
         }
 
-        public double RandomVar()
-        {
-            Random x = new Random();
-            double a = Convert.ToDouble(x.Next(100));
-            double b = Convert.ToDouble(x.Next(100));
-            double c = Convert.ToDouble(x.Next(100));
-            double d = Convert.ToDouble(x.Next(100));
-            return;
-        }
+        //public double RandomVar()
+        //{
+        //    Random x = new Random();
+        //    double a = Convert.ToDouble(x.Next(100));
+        //    double b = Convert.ToDouble(x.Next(100));
+        //    double c = Convert.ToDouble(x.Next(100));
+        //    double d = Convert.ToDouble(x.Next(100));
+        //    return;
+        //}
 
         public static void task1()
         {
-            double a =0, b=0, c=0, d=0;
-            RandomVar(a,b,c);
+            double a , b, c, d;
+            //RandomVar(a,b,c);
+            Random x = new Random();
+            a = Convert.ToDouble(x.Next(100));
+            b = Convert.ToDouble(x.Next(100));
+            c = Convert.ToDouble(x.Next(100));
+
             d = (b + Math.Sqrt(b * b + 4 * a * c)) / 2 * a - Math.Pow(a, 3) * c + Math.Pow(b, -2);
             Console.WriteLine("a = " + a + ", b = " + b + ", c = " + c);
             Console.WriteLine("d = " + d);
