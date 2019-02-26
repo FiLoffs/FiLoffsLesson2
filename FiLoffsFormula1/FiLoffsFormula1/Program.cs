@@ -12,6 +12,7 @@ namespace FiLoffsFormula1
         {
             task1();
             task2();
+            task3();
 
                                    
         }
@@ -57,6 +58,23 @@ namespace FiLoffsFormula1
             result = (a/c*b/d) -((a*b-c)/c/d);
             Console.WriteLine("task 2");
             Console.WriteLine("a = " + a + ", b = " + b + ", c = " + c + ", d = " + d);
+            Console.WriteLine("result = " + result);
+            Console.WriteLine();
+            Console.WriteLine("================");
+            Console.WriteLine();
+        }
+
+        public static void task3()
+        {
+            double x, y, result;
+            //RandomVar(a,b,c);
+            Random r = new Random();
+            x = Convert.ToDouble(r.Next(360));
+            y = Convert.ToDouble(r.Next(360));
+
+            result = Math.Tan((Math.Sin(x)+Math.Cos(y))/(Math.Sin(x) - Math.Cos(y)))*x*y;
+            Console.WriteLine("task 3");
+            Console.WriteLine("x = " + x + ", y = " + y);
             Console.WriteLine("result = " + result);
             Console.WriteLine();
             Console.WriteLine("================");
