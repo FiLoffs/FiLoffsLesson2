@@ -10,10 +10,9 @@ namespace FiLoffsFormula1
     {
         static void Main(string[] args)
         {
-            
-            
-
             task1();
+            task2();
+
                                    
         }
 
@@ -29,16 +28,39 @@ namespace FiLoffsFormula1
 
         public static void task1()
         {
-            double a , b, c, d;
+            double a , b, c, result;
             //RandomVar(a,b,c);
             Random x = new Random();
             a = Convert.ToDouble(x.Next(100));
             b = Convert.ToDouble(x.Next(100));
             c = Convert.ToDouble(x.Next(100));
 
-            d = (b + Math.Sqrt(b * b + 4 * a * c)) / 2 * a - Math.Pow(a, 3) * c + Math.Pow(b, -2);
+            result = (b + Math.Sqrt(b * b + 4 * a * c)) / 2 * a - Math.Pow(a, 3) * c + Math.Pow(b, -2);
+            Console.WriteLine("task 1");
             Console.WriteLine("a = " + a + ", b = " + b + ", c = " + c);
-            Console.WriteLine("d = " + d);
+            Console.WriteLine("result = " + result);
+            Console.WriteLine();
+            Console.WriteLine("================");
+            Console.WriteLine();
+        }
+
+        public static void task2()
+        {
+            double a, b, c, d, result;
+            //RandomVar(a,b,c);
+            Random x = new Random();
+            a = Convert.ToDouble(x.Next(100));
+            b = Convert.ToDouble(x.Next(100));
+            c = Convert.ToDouble(x.Next(100));
+            d = Convert.ToDouble(x.Next(100));
+
+            result = (a/c*b/d) -((a*b-c)/c/d);
+            Console.WriteLine("task 2");
+            Console.WriteLine("a = " + a + ", b = " + b + ", c = " + c + ", d = " + d);
+            Console.WriteLine("result = " + result);
+            Console.WriteLine();
+            Console.WriteLine("================");
+            Console.WriteLine();
         }
 
 
