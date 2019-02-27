@@ -16,20 +16,8 @@ namespace FiLoffsFormula1
             task5();
             task7();
             task13();
-            task16();
-
-                                   
+            task16();                                   
         }
-
-        //public double RandomVar()
-        //{
-        //    Random x = new Random();
-        //    double a = Convert.ToDouble(x.Next(100));
-        //    double b = Convert.ToDouble(x.Next(100));
-        //    double c = Convert.ToDouble(x.Next(100));
-        //    double d = Convert.ToDouble(x.Next(100));
-        //    return;
-        //}
 
         public static void task1()
         {
