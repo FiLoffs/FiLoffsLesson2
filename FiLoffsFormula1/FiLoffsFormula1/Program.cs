@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +8,15 @@ namespace FiLoffsFormula1
 {
     class Program
     {
+        static Random r = new Random();
+        
+        static void RandomVar(ref double a, ref double b, ref double c)
+        {
+            a = r.Next(100);
+            b = r.Next(100);
+            c = r.Next(100);
+        }
+        
         static void Main(string[] args)
         {
             task1();
@@ -82,6 +91,8 @@ namespace FiLoffsFormula1
             y = Convert.ToDouble(r.Next(100));
             e = Convert.ToDouble(r.Next(100));
 
+            RandomVar(x, y, e);
+            
             result = (3 + Math.Pow(e, y-1))/(1+ x*x*Math.Abs(y - Math.Tan(x)));
             Console.WriteLine("task 5");
             Console.WriteLine("x = " + x + ", y = " + y + ", e = " + e);
